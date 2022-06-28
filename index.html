@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Validator</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Validator</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
+	<div class="container">
+		<h1>Sign Up</h1>
+		<form id="form">
 
+			<div class="form-group">
+				<label for="name">Full Name</label><br>
+				<input type="text" id="name" placeholder="Full Name"><br>
+			</div>
+
+			<div class="form-group">
+				<label for="phone">Phone Number</label><br>
+				<input type="tel" id="phone" placeholder="555-555-5555"><br>
+			</div>	
+
+			<div class="form-group">
+				<label for="email">Email</label><br>
+				<input type="email" id="email" placeholder="email@address.com"><br>
+			</div>
+				
+			<div class="form-group">
+				<label for="url">Url</label><br>
+				<input type="url" id="url" name="url"><br>
+			</div>
+
+			<div class="form-group">
+				<label for="website">Url</label><br>
+				<input type="url" id="website" placeholder="https://yourWebsiteHere.com"><br>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label><br>
+				<input type="password" id="password" placeholder="Password"><br>
+			</div>
+
+			<div class="form-group">
+				<label for="password2">Confirm Password</label><br>
+				<input type="password" id="password2" placeholder=" Confirm Password"><br>
+			</div>
+
+			<button type="submit">Sign Up</button>
+		</form>
+		<!-- error/success message -->
+		<div class="message-container">
+			<h3 id="message">Dont Hesitate!</h3>
+		</div> 
+	</div>
 </body>
 </html>
