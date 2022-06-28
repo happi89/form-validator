@@ -46,10 +46,28 @@ function validateForm() {
   }
 }
 
+// store form data in local storage
+function storeFormData(e) {
+  const user = {
+    name: form.name.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    website: form.website.value,
+    password: form.password2.value,
+  }
+  
+  // localStorage.setItem('user', JSON.stringify(user));
+}
+
+
 //make sure passwords match
 function validatePassword(e) {
   e.preventDefault();
   validateForm();
+  // store form data in local storage
+  if(isVaild && passwordsMatch) {
+    storeFormData();
+  }
 };
 
 form.addEventListener('submit', validatePassword);
