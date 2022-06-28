@@ -55,10 +55,9 @@ function storeFormData(e) {
     website: form.website.value,
     password: form.password2.value,
   }
-  
+  // do something with user data
   // localStorage.setItem('user', JSON.stringify(user));
 }
-
 
 //make sure passwords match
 function validatePassword(e) {
