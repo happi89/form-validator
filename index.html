@@ -15,32 +15,32 @@
 
 			<div class="form-group">
 				<label for="name">Full Name</label>
-				<input type="text" id="name" placeholder="Full Name" required minlength="4" maxlength="100">
+				<input type="text" id="name" placeholder="Full Name" required minlength="4" maxlength="100" name="name">
 			</div>
 
 			<div class="form-group">
 				<label for="phone">Phone Number</label>
-				<input type="tel" id="phone" placeholder="555-555-5555 (include dashes)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="please enter a valid number seperated by dashes">
+				<input type="tel" id="phone" placeholder="555-555-5555 (include dashes)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="please enter a valid number seperated by dashes" name="phone">
 			</div>	
 
 			<div class="form-group">
 				<label for="email">Email</label>
-				<input type="email" id="email" placeholder="email@address.com" required>
+				<input type="email" id="email" placeholder="email@address.com" required name="email">
 			</div>
 
 			<div class="form-group">
 				<label for="website">Website Url</label>
-				<input type="url" id="website" placeholder="https://yourWebsiteHere.com" required>
+				<input type="url" id="website" placeholder="https://yourWebsiteHere.com" required name="website">
 			</div>
 
 			<div class="form-group">
-				<label for="password">Password</label>
-				<input type="password" id="password1" placeholder="Password (8 min char)" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" title="1 lowercase letter, 1 uppercase letter, 1 number, 1 special character">
+				<label for="password1">Password</label>
+				<input type="password" id="password1" placeholder="Password (8 min char)" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" title="1 lowercase letter, 1 uppercase letter, 1 number, 1 special character" name="password1">
 			</div>
 
 			<div class="form-group">
 				<label for="password2">Confirm Password</label>
-				<input type="password" id="password2" placeholder=" Confirm Password" required>
+				<input type="password" id="password2" placeholder=" Confirm Password" required name="password2">
 			</div>
 
 			<button type="submit">Sign Up</button>
